@@ -10,7 +10,7 @@ import (
 	"github.com/hchonan/gobt"
 	"github.com/hchonan/gobt/bluetooth"
 	btlog "github.com/hchonan/gobt/log"
-	"github.com/satori/go.uuid"
+	"github.com/google/uuid"
 )
 
 func main() {
@@ -46,11 +46,11 @@ func main() {
 		"RequireAuthorization":  dbus.MakeVariant(true),
 		"ServiceRecord":         dbus.MakeVariant(bytes.NewBuffer(sdp).String()),
 	}
-	uid := uuid.NewV4()
+	uid := uuid.NewString()
 
 	dObjCh := make(chan *dbus.Call, 1)
 	dObj := conn.Object("org.bluez", "/org/bluez")
-	regObjCall := dObj.Go("org.bluez.ProfileManager1.RegisterProfile", 0, dObjCh, hidp.Path(), uid.String(), opts)
+	regObjCall := dObj.Go("org.bluez.ProfileManager1.RegisterProfile", 0, dObjCh, hidp.Path(), uid, opts)
 	btlog.Debug(regObjCall)
 	var r interface{}
 	if regObjCall.Err != nil {
