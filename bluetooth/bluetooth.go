@@ -7,7 +7,7 @@ import (
 	"time"
 	"unsafe"
 
-	btlog "github.com/potch8228/gobt/log"
+	btlog "github.com/hchonan/gobt/log"
 
 	"golang.org/x/sys/unix"
 )

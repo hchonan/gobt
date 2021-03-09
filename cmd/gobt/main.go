@@ -7,9 +7,9 @@ import (
 	"os/signal"
 
 	"github.com/godbus/dbus"
-	"github.com/potch8228/gobt"
-	"github.com/potch8228/gobt/bluetooth"
-	btlog "github.com/potch8228/gobt/log"
+	"github.com/hchonan/gobt"
+	"github.com/hchonan/gobt/bluetooth"
+	btlog "github.com/hchonan/gobt/log"
 	"github.com/satori/go.uuid"
 )
 

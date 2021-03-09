@@ -4,9 +4,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/potch8228/gobt/bluetooth"
-	"github.com/potch8228/gobt/hid"
-	btlog "github.com/potch8228/gobt/log"
+	"github.com/hchonan/gobt/bluetooth"
+	"github.com/hchonan/gobt/hid"
+	btlog "github.com/hchonan/gobt/log"
 )
 
 type GoBtPollState byte

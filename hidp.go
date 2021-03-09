@@ -6,8 +6,8 @@ import (
 	"golang.org/x/sys/unix"
 
 	"github.com/godbus/dbus"
-	"github.com/potch8228/gobt/bluetooth"
-	btlog "github.com/potch8228/gobt/log"
+	"github.com/hchonan/gobt/bluetooth"
+	btlog "github.com/hchonan/gobt/log"
 )
 
 type HidProfile struct {

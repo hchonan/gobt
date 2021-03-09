@@ -5,8 +5,8 @@ import (
 	"log"
 
 	"github.com/gvalkov/golang-evdev"
-	"github.com/potch8228/gobt/bluetooth"
-	btlog "github.com/potch8228/gobt/log"
+	"github.com/hchonan/gobt/bluetooth"
+	btlog "github.com/hchonan/gobt/log"
 )
 
 type DeviceEventCtrl byte
